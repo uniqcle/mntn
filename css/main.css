@@ -79,16 +79,31 @@ body{
 
 
 .account{
+position: relative; 
     font-family: 'Gilroy';
 font-size: 17px;
 font-weight: 700; 
 text-decoration: none;
 color: #fff; 
 transition: color 0.2s ease-in; 
+padding-left: 30px; 
 }
 
 .account:hover{
     color: #FBD784; 
+
+}
+
+.account::before{
+    width: 20px; 
+    height: 20px; 
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    background-image: url('../img/icons/account.svg'); 
+
 }
 
 .hero {
@@ -343,6 +358,10 @@ transition: color 0.2s ease-in;
 
 .footer__nav-list > li{
     margin-bottom: 20px; 
+}
+
+.footer__nav-list > li:hover{
+    opacity: 0.7; 
 }
 
 .footer__nav-link{
