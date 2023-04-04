@@ -19,10 +19,12 @@ body{
     margin: 0 auto; 
     width: 1790px; 
     padding: 0 15px; 
+    
 }
 
 .row{
     display: flex; 
+    align-items: center; 
 }
 
 .space-between{
@@ -104,13 +106,16 @@ transition: color 0.2s ease-in;
     transform: translateY(-5%)
 }
 
-.hero__category {
-    font-family: 'Gilroy';
-    font-style: normal;
+.category__title {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 6px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+
+
     text-transform: uppercase;
     color: #FBD784;
     position: relative; 
@@ -118,7 +123,7 @@ transition: color 0.2s ease-in;
     margin-bottom: 32px; 
 }
 
-.hero__category::before{
+.category__title::before{
     position: absolute; 
     left: 0; 
     top: 50%; 
@@ -164,4 +169,104 @@ transition: color 0.2s ease-in;
     top: 10%;
     right: -20px;
     background-image: url('../img/icons/arrow_down.svg');
+}
+
+/* MAIN */ 
+.container{
+    max-width: 1492px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+}
+
+/* Article */ 
+
+.article {
+    margin-top: 200px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+.article__txt-block {
+ 
+    padding-left: 150px; 
+ 
+}
+
+.article__title {
+ 
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #fff; 
+    margin-bottom: 27px; 
+    padding-right: 77px; 
+}
+.article__subtitle {
+}
+.article__text {
+    position: relative; 
+    max-width: 632px;
+    height: 160px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 27px; 
+}
+
+.article__text::before{
+    position: absolute; 
+    top: -334px;
+    left: -145px;  
+    /* top: -50%; 
+    transform: translateY(-50%);  */
+ 
+    display: block; 
+    content: attr(data-number); 
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    width: 240px; 
+    height: 240px; 
+    font-size: 240px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.1);
+
+}
+
+.read-more {
+    display: inline-block; 
+    position: relative; 
+    width: 87px;
+    height: 22px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #FBD784;
+
+}
+
+.read-more::after{
+    display: block; 
+    width: 24px; 
+    height: 16px; 
+    content:""; 
+    position: absolute; 
+    top: 10%;
+    right: -35px;
+    background-image: url('../img/icons/arrow_right.svg');
+}
+
+
+.article-img {
+   width: 566px; 
+   height: 720px; 
 }
