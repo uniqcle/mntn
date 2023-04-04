@@ -1,0 +1,19 @@
+/*
+font-family: 'Gilroy';
+font-family: 'Playfair Display', serif;
+*/ 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
+
+body{
+    font-family: 'Gilroy';
+    background-color: #0B1D26;
+    background-image: url('../img/bg/bg.jpg'); 
+    background-size: 100% auto; 
+    background-repeat: no-repeat; 
+}
+
+.test{
+    background-color: green;
+    width: 600px; 
+    height: 3200px; 
+}
