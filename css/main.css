@@ -335,10 +335,14 @@ transition: color 0.2s ease-in;
 }
 
 .footer__nav-list{
-    height: 220px; 
+
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
+}
+
+.footer__nav-list > li{
+    margin-bottom: 20px; 
 }
 
 .footer__nav-link{
