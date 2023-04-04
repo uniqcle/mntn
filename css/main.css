@@ -10,10 +10,79 @@ body{
     background-image: url('../img/bg/bg.jpg'); 
     background-size: 100% auto; 
     background-repeat: no-repeat; 
+    color: #FFFFFF;
 }
 
-.test{
-    background-color: green;
-    width: 600px; 
-    height: 3200px; 
+/* BASE */ 
+
+.container-wide{
+    margin: 0 auto; 
+    width: 1790px; 
+    padding: 0 15px; 
 }
+
+.row{
+    display: flex; 
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+/* HEADER */ 
+
+.header{
+    padding-top: 64px; 
+}
+
+.logo{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; 
+    font-weight: 700; 
+ 
+}
+
+/* NAV */ 
+
+.nav {
+}
+.nav-list {
+    list-style-type: none; 
+    display: flex; 
+    gap: 40px; 
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+   
+}
+.nav-item {
+}
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.nav-link:hover{
+    color: #FBD784; 
+}
+
+
+.account{
+    font-family: 'Gilroy';
+font-size: 17px;
+font-weight: 700; 
+text-decoration: none;
+color: #fff; 
+transition: color 0.2s ease-in; 
+}
+
+.account:hover{
+    color: #FBD784; 
+}
+
+
+
