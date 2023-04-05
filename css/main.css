@@ -89,6 +89,46 @@ transition: color 0.2s ease-in;
 padding-left: 30px; 
 }
 
+
+.mobile-nav__button{
+    cursor: pointer; 
+}
+
+.nav-button__icon{
+    position: relative; 
+    display: block; 
+    background-color: #fff; 
+    width: 42px; 
+    height: 6px; 
+    border: none; 
+}
+
+.nav-button__icon::before{
+    position: absolute; 
+    top: -10px; 
+    left: 0px; 
+    content: ""; 
+    display: block; 
+    background-color: #fff; 
+    width: 42px; 
+    height: 6px; 
+    border: none; 
+}
+
+.nav-button__icon::after{
+    position: absolute; 
+    top: 10px; 
+    left: 0px; 
+    content: ""; 
+    display: block; 
+    background-color: #fff; 
+    width: 42px; 
+    height: 6px; 
+    border: none; 
+}
+
+
+
 .account:hover{
     color: #FBD784; 
 

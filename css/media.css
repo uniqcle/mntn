@@ -1,0 +1,11 @@
+main, footer{
+    display: none; 
+}
+
+@media(max-width:800px){
+
+    .nav-menu, .account{
+        display: none; 
+    }
+
+}
