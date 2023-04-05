@@ -17,7 +17,7 @@ body{
 
 .container-wide{
     margin: 0 auto; 
-    width: 1790px; 
+    max-width: 1790px; 
     padding: 0 15px; 
     
 }
@@ -36,7 +36,7 @@ body{
 
 .header{
     padding-top: 64px; 
-    padding-bottom: 843px; 
+    padding-bottom: 600px;
 }
 
 .logo{
@@ -52,8 +52,7 @@ body{
     margin-bottom: 198px; 
 }
 
-.nav-menu {
-}
+ 
 .nav-list {
     list-style-type: none; 
     display: flex; 
@@ -65,8 +64,7 @@ body{
     line-height: 22px;
    
 }
-.nav-item {
-}
+ 
 .nav-link {
     color: #FFFFFF;
     text-decoration: none;
@@ -91,6 +89,7 @@ padding-left: 30px;
 
 
 .mobile-nav__button{
+    display: none; 
     cursor: pointer; 
 }
 
@@ -125,6 +124,37 @@ padding-left: 30px;
     width: 42px; 
     height: 6px; 
     border: none; 
+}
+
+.mobile-nav__button-close .nav-button__icon{
+    background-color: transparent; 
+}
+
+.mobile-nav__button-close .nav-button__icon::before{
+    transform: rotate(45deg); 
+    top: 0; 
+}
+
+.mobile-nav__button-close .nav-button__icon::after{
+    transform: rotate(-45deg); 
+    top: 0; 
+}
+
+
+.mobile-nav{
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+
+    display: none; 
+    flex-direction: column; 
+    width: 320px; 
+    height: 100%; 
+
+ 
+    background-color: #22211f; 
+    opacity: 0.5; 
+    
 }
 
 
